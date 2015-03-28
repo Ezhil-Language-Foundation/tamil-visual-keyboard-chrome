@@ -1,0 +1,27 @@
+// (C) 2015 Muthiah Annamalai.
+//     Ezhil Language Foundation
+{
+  "name": "Tamil Visual Keyboard - தட்டச்சு",
+  "description": "Tamil Visual Keyboard. தமிழில் எழுத உலாவி வழி தட்டச்சு",
+  "version": "1.0",
+  "content_security_policy" : "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+  "permissions": [
+				  "tabs"
+				  ],
+  "browser_action"  : {
+    "default_title" : "Tamil Visual Keyboard. தமிழில் எழுத உலாவி வழி தட்டச்சு",
+    "default_icon"  : "img/mini_kbd.png",
+    "default_popup" : "html/popup.html"
+  },
+  "background": {
+                 //inclusion follows dependecy (most-independent first)
+    "scripts": ["js/jquery_1_8.js",
+                "js/jquery.cookie.js","js/jquery-ui.min.js",
+                "js/jquery.keyboard.js","js/tamil.js",
+                "js/tamil_visual_kbd.js","css/jquery-ui.css"]
+  },
+  "manifest_version": 2,
+  "icons" : { "128": "img/mini_kbd.png" },
+  "short_name" : "Tamil Visual Keyboard",
+  "author": "Ezhil Language Foundation"
+}
